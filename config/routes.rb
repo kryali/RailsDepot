@@ -2,6 +2,7 @@ RailsDepot::Application.routes.draw do
   get "store/index"
 
 match "store/add_tocart" => "store#add_to_cart"
+match "store/empty_cart" => "store#empty_cart"
   resources :products 
 	resources :store
 

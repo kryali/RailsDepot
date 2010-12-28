@@ -4,6 +4,9 @@
 <title>My Online Store</title>
 <%= stylesheet_link_tag "depot", :media => "all" %>
 </head> <body id="store">
+<% if flash[:notice] %>
+	<div id="notice"><%= flash[:notice] %></div>
+<% end %>
 <div id="banner">
 <%= image_tag("logo.png") %>
 <%= @page_title || "The Store" %>
